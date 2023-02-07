@@ -1,27 +1,30 @@
-let gifDOM = document.querySelector(".gifs");
+let gifContainer = document.querySelector(".gifs");
 let giphyElement = document.querySelector(".giphyElement");
 
-let giphys = []
+let giphys = [];
+
 
 const getGiphy = async () =>{
-const response = await fetch("https://api.giphy.com/v1/gifs/trending?api_key=ozBmXbUmdzGnTMVPCErGa3IG8cVPTqeP&limit=5&rating=g");
+const response = await fetch("https://api.giphy.com/v1/gifs/trending?api_key=VRRf6NtsOiyQ92RoSfYHlnJGheMssyfi&limit=20&rating=g");
+
 const giphy = await response.json();
 return giphy.data;
-
 }
-window.addEventListener("load", async (event) => {
+
+window.addEventListener("load", async () => {
 giphys = await getGiphy();
 console.log(giphys)
 getGiphyList();
-});
+})
+
 
 const getGiphyList = () =>{
-    giphys.map((giphy) =>{
-        const liItem = document.createElement("li");
-        const img = document.createElement("img");
-        img.src = giphy.images.downsized.url; 
-        liItem.appendChild(img);
-        gifDOM.appendChild(liItem);
-        return;
+    giphys.map((giphy) => {
+    const giphyLi = document.createElement("li");
+    const giphyImg = document.createElement("img");
+    giphyImg.src = giphy.images.downsized_medium.url;
+    giphyLi.appendChild(giphyImg);
+    giphyElement.appendChild(giphyLi);
+    return;
     })
 }

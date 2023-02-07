@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: grey;
+}
+body .menu {
+  background-color: white;
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body .menu .logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+body .menu .logo .logoLink {
+  width: 100px;
+  height: 100px;
+}
+body .menu .navbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+body .menu .navbar .flex {
+  font-size: 18px;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-right: 1rem;
+}
+body .menu .navbar .flex li {
+  background-color: grey;
+  margin-right: 1rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 105px;
+  text-align: center;
+}
+body .gifContainer {
+  width: 100%;
+  height: 100%;
+}
+body .gifContainer .giphyElement {
+  padding: 250px;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+body .gifContainer .giphyElement li {
+  background-color: black;
+  display: flex;
+  border: 1px solid black;
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+}
+body .gifContainer .giphyElement li img {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}/*# sourceMappingURL=style.css.map */
