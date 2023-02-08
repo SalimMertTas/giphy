@@ -1,5 +1,6 @@
 let gifContainer = document.querySelector(".gifs");
 let giphyElement = document.querySelector(".giphyElement");
+let buttonClick = document.querySelector(".button")
 
 let giphys = [];
 
@@ -28,3 +29,5 @@ const getGiphyList = () =>{
     return;
     })
 }
+
+
