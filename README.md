@@ -8,8 +8,6 @@ Techs:
 
 Demo:[happy-gifs-demo](https://giphy-red.vercel.app/)
 
-![how-to-use](https://media.giphy.com/media/M9WwBPTYW5eCAsGYSL/giphy.gif)
-
 ---
 
 ## Installation
